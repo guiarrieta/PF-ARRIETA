@@ -1,18 +1,32 @@
+/* variables */
 /*nesting*/
 header {
   background-color: beige;
 }
 header nav {
-  padding: 25px;
+  padding: 15px;
 }
 header nav ul {
   list-style-type: none;
-}
-header nav ul li {
-  color: red;
+  background-color: antiquewhite;
+  padding: 0px;
+  border: 0px;
+  font-family: "Tangerine", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
 }
 header nav ul li a {
-  font-size: 20px;
+  font-size: 5vw;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: #FCC;
+  border-radius: 15px;
 }
 
 html {
@@ -21,6 +35,21 @@ html {
 
 body {
   background-color: beige;
+}
+
+body main div {
+  background-color: beige;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  border: 0;
+}
+body main div p {
+  font-size: 3vw;
+  font: "Tangerine";
+  background-color: beige;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* formato titulo principal de todas las paginas */
@@ -40,41 +69,25 @@ ul {
   list-style: none;
 }
 
-/* formato menu de navegacion de todas las paginas */
-.barra_navegacion {
-  font-size: 4vw;
-  font-family: "Tangerine", serif;
-  background-color: antiquewhite;
-  padding: 0px;
+p {
+  font-size: 3vw;
+  font: "Tangerine";
+  background-color: beige;
+  border: 0;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+}
+
+footer {
+  background-color: beige;
   border: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 50px;
-  width: 100%;
   margin: 0px;
+  padding: 0px;
 }
 
-.barra_navegacion li a:hover {
-  background-color: #FCC;
-}
-
+/* formato menu de navegacion de todas las paginas */
 .link-nav {
   text-decoration: none;
-}
-
-.cuerpo {
-  display: grid;
-  grid-template-columns: 65% 30%;
-}
-
-.cuerpo-main {
-  font-size: 36px;
-  display: grid;
-  width: auto;
-  grid-template-columns: 33% 32%;
-  grid-template-rows: 1fr 1fr;
 }
 
 .carousel-item img {
@@ -82,52 +95,79 @@ ul {
 }
 
 .cuerpo-habitacion {
+  background-color: beige;
   display: grid;
   width: auto;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 32% 32% 32%;
   justify-content: space-evenly;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
 .cuerpo-habitacion img {
-  width: 80%;
+  border: 0;
+  margin: 0;
+  padding: 0px;
+  border-radius: 10px;
+  width: 95%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.cuerpo-habitacion img:active {
+  width: 50vw;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
 }
 
 .cuerpo-living {
+  background-color: beige;
   display: grid;
   width: auto;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 32% 32% 32%;
   grid-template-rows: 1fr 1fr;
   justify-content: space-evenly;
 }
 
 .cuerpo-living img {
-  width: 80%;
+  border: 0;
+  margin: 0;
+  padding: 0px;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.cuerpo-living img:active {
+  width: 50vw;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
 }
 
 .cuerpo-gift {
+  background-color: beige;
   display: grid;
   width: auto;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 32% 32% 32%;
   grid-template-rows: 1fr 1fr;
   justify-content: space-evenly;
 }
 
 .cuerpo-gift img {
-  width: 80%;
+  border: 0;
+  margin: 0;
+  padding: 0px;
+  border-radius: 10px;
+  width: 95%;
 }
 
-.barra_lateral {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 38%;
-}
-
-/* formato imagenes de barra lateral pagina ppal */
-.barra_lateral img {
-  width: 100px;
-  height: 100px;
+.cuerpo-gift img:active {
+  width: 50vw;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
 }
 
 .mifooter {
@@ -138,6 +178,8 @@ ul {
   flex-direction: row;
   text-align: center;
   width: 100%;
+  margin: 0px;
+  border: 0px;
 }
 
 .icono-social {
