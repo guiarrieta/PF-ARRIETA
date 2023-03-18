@@ -1,6 +1,6 @@
 /*nesting*/
 header{
-    background-color: lightblue;
+    background-color: beige;
     nav{
         padding: 25px;
         ul{
@@ -14,7 +14,6 @@ header{
         }
     }
 }
-
 html{
     font-family: 'Tangerine', serif;
 }
@@ -24,11 +23,11 @@ body{
 }
 
 /* formato titulo principal de todas las paginas */
-h1 {
+.titulo-main {
     color: gray;
     text-align: center;
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 8vw;
+    font-weight: 100;
     padding: 0px;
     border: 0px;
     margin: 0px;
@@ -42,7 +41,8 @@ ul{
 
 /* formato menu de navegacion de todas las paginas */
 .barra_navegacion{
-    font-size: 40px;
+    font-size: 4vw;
+    font-family: 'Tangerine', serif;
     background-color: antiquewhite;
     padding: 0px;
     border: 0px;
@@ -53,6 +53,15 @@ ul{
     height: 50px;
     width: 100%;
     margin: 0px;
+}
+
+.barra_navegacion li a:hover{
+    background-color:#FCC;
+}
+
+
+.link-nav{
+    text-decoration: none;
 }
 
 .cuerpo {
@@ -68,6 +77,10 @@ ul{
     grid-template-rows: 1fr 1fr;
 }
 
+
+.carousel-item img{
+    width: 100%;
+}
 .cuerpo-habitacion{
     display: grid;
     width: auto;
@@ -122,11 +135,11 @@ ul{
     height: 100px;
 }
 
-footer	{
+.mifooter	{
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color:antiquewhite;
     flex-direction: row;
     text-align: center;
     width: 100%;
@@ -139,7 +152,7 @@ footer	{
     background-color: antiquewhite;
     flex-direction: row;
     text-align: center;
-    height: 45px;
+    height: 50px;
     width: 100%;
     margin: 5px;
 }
@@ -147,17 +160,18 @@ footer	{
 
 /* formato imagenes de footer */
 .icono-social a img{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    height: 30px;
-    width: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    height: 50px;
+    width: 40px;
 }
 
 /* texto de footer  */
 footer .texto{
     color: lightgray;
     text-align: center;
+    font-family: 'Tangerine', serif;
 }
 
 /* contenedor de formulario */
@@ -174,3 +188,4 @@ form{
     align-items: center;
     grid-template-columns: 1fr 1fr;
 }
+
